@@ -32,3 +32,14 @@ console.log(firstEvenElement);
 
 var firstOddElement = document.getElementsByClassName('odd')[0];
 console.log(firstOddElement);
+
+//querySelector MUST use # or .
+var main = document.querySelector('#main');
+console.log(main);
+
+var firstOddElement = document.querySelector('.odd');
+console.log(firstOddElement);
+
+//querySelectorAll
+var oddAndEvenElements = document.querySelectorAll('.odd, .even');
+console.log(oddAndEvenElements);
