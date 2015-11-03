@@ -1,8 +1,10 @@
 console.log('sanity check!')
 
+//get by id
 var firstParagraph = document.getElementById('main');
 console.log(firstParagraph);
 
+//get by tag
 var getAllElements = document.getElementsByTagName('ul');
 console.log(getAllElements)
 
@@ -17,3 +19,16 @@ console.log(allListItems);
 for (var i = 0; i < allListItems.length; i++) {
   console.log(allListItems[i]);
 }
+
+// get by class
+var evenElements = document.getElementsByClassName('even');
+console.log(evenElements);
+
+var oddElements = document.getElementsByClassName('odd');
+console.log(oddElements);
+
+var firstEvenElement = document.getElementsByClassName('even')[0];
+console.log(firstEvenElement);
+
+var firstOddElement = document.getElementsByClassName('odd')[0];
+console.log(firstOddElement);
